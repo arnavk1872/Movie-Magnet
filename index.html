@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Movie Magnet</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+</head>
+
+<body class="bg-image" style="background-image: url('1.jpg'); height: 100vh">
+  <div class="d-flex flex-column h-100">
+    <header>
+      <div class="d-flex justify-content-between align-items-center p-3">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="36"
+          height="30"
+          fill="currentColor"
+          class="bi bi-magnet margin"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M8 1a7 7 0 0 0-7 7v3h4V8a3 3 0 0 1 6 0v3h4V8a7 7 0 0 0-7-7m7 11h-4v3h4zM5 12H1v3h4zM0 8a8 8 0 1 1 16 0v8h-6V8a2 2 0 1 0-4 0v8H0z"
+          />
+        </svg>
+
+        <nav class="nav justify-content-center">
+          
+          <a class="nav-link fw-bold py-1 margin" href="fav/favPage.html">Favorites</a>
+          <a class="nav-link fw-bold py-1 margin" href="mailto:arnavk1802@gmail.com">Contact</a>
+          <a class="nav-link fw-bold py-1 margin" aria-current="page" href="https://www.omdbapi.com/" >OMDb</a>
+        </nav>
+      </div>
+    </header>
+
+
+    <!-- Outer-container for all the elements-->
+    
+
+       
+
+       
+        <!-- end of Search container -->
+        <h1 id="heading">Movie Magnet</h1>
+
+        <p class="lead">
+          Discover and explore movies with our Movie Explorer! Search for your
+          favorite films, mark them as favorites, and enjoy seamless browsing
+          with persistent favorite movie tracking.
+        </p>
+        <div class="search-container">
+            <div class="search-element">
+                
+                
+                <input type="text" class="form-control" placeholder="Enter Movie Title..." id="movie-search-box">
+
+                <div class="search-list" id="search-list">
+                    <!-- This is the suggestions box list, inside which all similar movies will be displayed acc. to user entered movie title -->
+                </div>
+
+            </div>
+        </div>
+
+  
+    <!-- end of outer container -->
+    <footer class="text-center text-white-50 p-3">
+        <p>Copyright &copy; Arnav Khajuria 2024</p>
+      </footer>
+
+    <!-- Javascript file -->
+    <script src="script.js"></script>
+</body>
+</html>
+
